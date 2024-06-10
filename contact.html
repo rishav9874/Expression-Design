@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
+    <style>
+        .contact-header {
+            padding: 4rem 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        .contact-section {
+            padding: 4rem 0;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+        }
+
+        .contact-info h5 {
+            margin-top: 2rem;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .faq-section {
+            padding: 4rem 0;
+        }
+        .faq-section h2 {
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #000;
+            background-color: #e7e7e7;
+        }
+        .accordion-item {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Expression Design</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                    </li>
+                </ul>
+                <a class="btn btn-dark ms-lg-3" href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Header Section -->
+    <section class="contact-header">
+        <div class="container">
+            <h1 class="display-4">Get in Touch</h1>
+            <p class="lead">We would love to hear from you. Contact us for a consultation.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 contact-info align-content-center">
+                    <h2 class="display-6">Contact Information</h2>
+                    <p class="lead">For any inquiries, please feel free to reach out to us.</p>
+                    <h5><i class="bi bi-envelope"></i> Email</h5>
+                    <p><a href="mailto:hello@expressiondesign.com">hello@expressiondesign.com</a></p>
+                    <h5><i class="bi bi-telephone"></i> Phone</h5>
+                    <p><a href="tel:+919875643210">+91 9876543210</a></p>
+                    <h5><i class="bi bi-geo-alt"></i> Office</h5>
+                    <p>123 Park Street, Kolkata, West Bengal, India</p>
+                    <p><a href="#">Get Directions</a></p>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/office.webp" alt="Contact Us Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-4">
+                    <h2 class="display-6">Contact us</h2>
+                    <p class="lead">Have a question? Send us a message.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Type your message..."></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">I agree to the Terms</label>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-md-6">
+                    <h2 class="display-6">Get in Touch</h2>
+                    <p>Visit our office in the heart of Kolkata to experience our beautiful home designs.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li><strong>Email:</strong> <a
+                                href="mailto:info@expressiondesign.com">info@expressiondesign.com</a>
+                        </li>
+                        <li><strong>Phone:</strong> <a href="tel:+919876543210">+91 9876543210</a></li>
+                        <li><strong>Office:</strong> 123 Park Street, Kolkata, West Bengal, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="location-map w-100 border">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.5528342412413!2d88.4838568748573!3d22.595821979475257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b83917d8f35%3A0xf05e32ee9c4c918!2sCoffee%20House%20(New%20Town)!5e0!3m2!1sen!2sin!4v1717850043891!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section p-5 text-white" id="faq-section">
+        <div class="container">
+            <h2 class="display-6">FAQs</h2>
+            <p>Find answers to common questions about our interior design services and process.</p>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How to get started?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            To get started, simply contact our team via phone or email. We will guide you through the
+                            process and answer any questions you may have.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is the cost?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The cost of our interior design services varies depending on the scope of the project. We
+                            offer customized solutions to fit your budget and needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is the timeline?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The timeline for each project depends on factors such as the size of the space and the
+                            complexity of the design. Our team will provide you with a detailed timeline during the
+                            initial consultation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Do you offer consultations?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we offer consultations to discuss your design goals and provide recommendations.
+                            Contact us to schedule a consultation.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Can I see your portfolio?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we have a portfolio showcasing our previous projects. Please visit our website to view
+                            our portfolio.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <p>Still have questions?</p>
+                <a href="contact.html" class="btn btn-outline-dark">Contact our team</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Home Interior</h5>
+                </div>
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Services</a></li>
+                        <li><a href="#" class="text-dark">Portfolio</a></li>
+                        <li><a href="#" class="text-dark">Contact Us</a></li>
+                        <li><a href="#" class="text-dark">Blog</a></li>
+                        <li><a href="#" class="text-dark">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Terms of Use</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark">Sitemap</a></li>
+                        <li><a href="#" class="text-dark">Disclaimer</a></li>
+                        <li><a href="#" class="text-dark">Career</a></li>
+                        <li><a href="#" class="text-dark">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Subscribe</h5>
+                    <p>Join our community to receive updates and exclusive offers.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p class="mt-3">&copy; 2024 Expression Design. All rights reserved. <a href="#"
+                            class="text-dark">Privacy Policy</a> | <a href="#" class="text-dark">Terms of Service</a> |
+                        <a href="#" class="text-dark">Cookie Settings</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

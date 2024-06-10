@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expression Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <style>
+        .carousel-item-hero {
+            height: 500px;
+            /* Set your desired height here */
+        }
+
+        .carousel-item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* Ensure the image covers the area without distorting */
+        }
+
+        .testimonial-card {
+            border: none;
+            background-color: transparent;
+        }
+
+        .testimonial-card .card-body {
+            padding-left: 0;
+        }
+
+        .testimonial-card .client-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: #000;
+        }
+
+        .carousel-inner {
+            margin-bottom: 0;
+            /* Remove margin from carousel inner */
+        }
+
+        .carousel-item {
+            margin-bottom: 0;
+            /* Remove margin from carousel items */
+        }
+
+        .section-padding {
+            padding-bottom: 1rem;
+            /* Adjust section padding bottom */
+        }
+
+        .client-card {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .cta-content {
+            max-width: 50%;
+        }
+        .cta-buttons .btn {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">Expression Design</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+
+                </ul>
+                <a class="btn btn-dark ms-lg-3" href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Item Header Section -->
+    <section class="py-5 text-white" id="portfolio-item-header">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="display-5">Project name here</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+                        eros elementum tristique.</p>
+                    <div>
+                        <span class="badge bg-secondary me-1">Tag one</span>
+                        <span class="badge bg-secondary me-1">Tag two</span>
+                        <span class="badge bg-secondary">Tag three</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active carousel-item-hero">
+                                <img src="/images/gallery2.webp" class="d-block w-100" alt="Project Image 1">
+                            </div>
+                            <div class="carousel-item carousel-item-hero">
+                                <img src="/images/gallery6.webp" class="d-block w-100" alt="Project Image 2">
+                            </div>
+                            <div class="carousel-item carousel-item-hero">
+                                <img src="/images/gallery9.webp" class="d-block w-100" alt="Project Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio List Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2 class="display-5">Experience Our Stunning Projects</h2>
+                    <p>Browse through our portfolio and get inspired</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/luxurylivingroom.webp" class="card-img-top" alt="Luxury Living Room">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxury Living Room</h5>
+                            <p class="card-text">A modern and elegant living room design with luxurious features.</p>
+                            <div>
+                                <span class="badge bg-secondary me-1">Contemporary</span>
+                                <span class="badge bg-secondary me-1">Luxury</span>
+                                <span class="badge bg-secondary">Elegant</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/modernkitchen.webp" class="card-img-top" alt="Modern Kitchen">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Kitchen</h5>
+                            <p class="card-text">A sleek and functional kitchen design with modern appliances.</p>
+                            <div>
+                                <span class="badge bg-secondary me-1">Sleek</span>
+                                <span class="badge bg-secondary me-1">Functional</span>
+                                <span class="badge bg-secondary">Modern</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="/images/cozybedroom.webp" class="card-img-top" alt="Cozy Bedroom">
+                        <div class="card-body">
+                            <h5 class="card-title">Cozy Bedroom</h5>
+                            <p class="card-text">A warm and inviting bedroom design with a cozy atmosphere.</p>
+                            <div>
+                                <span class="badge bg-secondary me-1">Warm</span>
+                                <span class="badge bg-secondary me-1">Inviting</span>
+                                <span class="badge bg-secondary">Cozy</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div class="col">
+                    <a href="#" class="btn btn-outline-dark">View all</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Item Body Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <img src="/images/portfolio.webp" class="img-fluid" alt="Portfolio Image">
+                </div>
+                <div class="col-md-6 align-content-center">
+                    <h2 class="display-6">Elegant Home Design Solutions</h2>
+                    <p>At Expression Design, we believe in creating beautiful and functional living spaces that reflect
+                        your unique style and personality. Our team of talented interior designers is dedicated to
+                        turning your vision into reality. Whether you're looking to renovate your kitchen, redesign your
+                        living room, or create a cozy bedroom retreat, we have the expertise and creativity to bring
+                        your ideas to life.</p>
+                    <p>With a focus on quality craftsmanship and attention to detail, we strive to exceed your
+                        expectations with every project. From selecting the perfect color palette to sourcing the finest
+                        materials, we take care of every aspect of the design process. Our goal is to create a space
+                        that not only looks stunning but also enhances your daily life.</p>
+                    <p>We understand that every client is different, which is why we offer personalized design solutions
+                        tailored to your specific needs and budget. Our portfolio showcases a diverse range of projects,
+                        from modern and minimalist to classic and timeless. Take a closer look at our work and get
+                        inspired to transform your home.</p>
+                    <p>Ready to embark on a design journey with us? Contact us today to schedule a consultation and
+                        let's create something extraordinary together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5 section-padding">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="display-5">Happy Clients</h2>
+                    <p>Hear what our clients have to say about us</p>
+                </div>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card testimonial-card">
+                                    <div class="card-body client-card rounded p-2">
+                                        <div class="mb-3">
+                                            <span class="text-warning">★★★★★</span>
+                                        </div>
+                                        <p>Our experience with Expression Design was amazing. They transformed our house
+                                            into a beautiful and elegant space.</p>
+                                        <div class="client-info">
+                                            <img src="/images/team1.webp" alt="Client 1">
+                                            <div>
+                                                <p class="fw-bold mb-0">John Doe</p>
+                                                <p class="text-muted mb-0">Homeowner, ABC Company</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card testimonial-card">
+                                    <div class="card-body client-card rounded p-2">
+                                        <div class="mb-3">
+                                            <span class="text-warning">★★★★★</span>
+                                        </div>
+                                        <p>Expression Design exceeded our expectations. Their attention to detail and
+                                            creativity made our dream home a reality.</p>
+                                        <div class="client-info">
+                                            <img src="/images/team2.webp" alt="Client 2">
+                                            <div>
+                                                <p class="fw-bold mb-0">Jane Smith</p>
+                                                <p class="text-muted mb-0">Interior Designer, XYZ Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card testimonial-card">
+                                    <div class="card-body client-card rounded p-2">
+                                        <div class="mb-3">
+                                            <span class="text-warning">★★★★★</span>
+                                        </div>
+                                        <p>Expression Design truly understands our vision and brought it to life. We
+                                            couldn't be happier with the results.</p>
+                                        <div class="client-info">
+                                            <img src="/images/team3.webp" alt="Client 3">
+                                            <div>
+                                                <p class="fw-bold mb-0">David Johnson</p>
+                                                <p class="text-muted mb-0">Director, 123 Corporation</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card testimonial-card">
+                                    <div class="card-body client-card rounded p-2">
+                                        <div class="mb-3">
+                                            <span class="text-warning">★★★★★</span>
+                                        </div>
+                                        <p>We highly recommend Expression Design for their excellent work and
+                                            professionalism.</p>
+                                        <div class="client-info">
+                                            <img src="/images/team4.webp" alt="Client 4">
+                                            <div>
+                                                <p class="fw-bold mb-0">Emily Wilson</p>
+                                                <p class="text-muted mb-0">Manager, LMN Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row gallery-title">
+                <div class="col">
+                    <h2 class="display-5">Our Portfolio</h2>
+                    <p>Explore our stunning interior design projects and get inspired.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 gallery-item">
+                    <img src="/images/gallery3.webp" alt="Project 1" class="img-fluid">
+                </div>
+                <div class="col-md-3 gallery-item">
+                    <img src="/images/gallery6.webp" alt="Project 2" class="img-fluid">
+                </div>
+                <div class="col-md-3 gallery-item">
+                    <img src="/images/gallery8.webp" alt="Project 3" class="img-fluid">
+                </div>
+                <div class="col-md-3 gallery-item">
+                    <img src="/images/gallery9.webp" alt="Project 4" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5" id="portfolio-cta">
+        <div class="container">
+            <div class="row cta-section">
+                <div class="col-md-6 cta-content">
+                    <h2 class="display-5">Transform Your Space with Us</h2>
+                    <p>Experience the perfect blend of style, comfort, and functionality in your home.</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-dark">Contact</a>
+                        <a href="#" class="btn btn-outline-dark">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/images/gallery5.webp" style="max-height: 600px;" alt="CTA Image" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Home Interior</h5>
+                </div>
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Services</a></li>
+                        <li><a href="#" class="text-dark">Portfolio</a></li>
+                        <li><a href="#" class="text-dark">Contact Us</a></li>
+                        <li><a href="#" class="text-dark">Blog</a></li>
+                        <li><a href="#" class="text-dark">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Terms of Use</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                        <li><a href="#" class="text-dark">Sitemap</a></li>
+                        <li><a href="#" class="text-dark">Disclaimer</a></li>
+                        <li><a href="#" class="text-dark">Career</a></li>
+                        <li><a href="#" class="text-dark">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Subscribe</h5>
+                    <p>Join our community to receive updates and exclusive offers.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                    <p class="mt-3">&copy; 2024 Expression Design. All rights reserved. <a href="#"
+                            class="text-dark">Privacy Policy</a> | <a href="#" class="text-dark">Terms of Service</a> |
+                        <a href="#" class="text-dark">Cookie Settings</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

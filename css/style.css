@@ -1,0 +1,549 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-nav {
+    font-size: 18px;
+}
+.navbar-brand{
+    font-style: bold;
+}
+
+.hero-section {
+    background-image: url('/images/DALL·E\ 2024-05-31\ 01.41.51\ -\ A\ beautifully\ designed\ modern\ living\ room\ with\ large\ windows\,\ stylish\ furniture\,\ and\ elegant\ decor\,\ with\ a\ subtle\ dark\ overlay.\ The\ room\ features\ a\ mi.webp'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .form-control {
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.hero-section .btn-primary {
+    border-radius: 0;
+}
+
+.btn-dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #495057;
+}
+
+.feature-section {
+    padding: 60px 0;
+}
+
+.feature-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+#services {
+    padding: 60px 0;
+}
+
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.service-card .card-text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.service-card ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.service-card ul li i {
+    color: #ff4081;
+    margin-right: 10px;
+}
+
+#benefits {
+    padding: 60px 0;
+}
+
+#benefits h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#benefits p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#benefits ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#benefits ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#benefits ul li i {
+    color: #ff4081;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+#benefits img {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#benefits img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+#testimonials {
+    padding: 60px 0;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#testimonials p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff4081;
+    border-radius: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #e53570;
+}
+
+#cta {
+    padding: 60px 0;
+}
+
+#cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+#cta p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+#cta .btn-pink {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+#cta .btn-pink:hover {
+    background-color: #e53570;
+    color: #fff;
+}
+
+#cta {
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to ensure text visibility */
+    color: #fff;
+}
+
+#cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#cta ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#cta ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#cta ul li i {
+    color: #ff4081;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+#cta .btn-pink {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+#cta .btn-pink:hover {
+    background-color: #e53570;
+    color: #fff;
+}
+
+#cta img {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure the image is responsive */
+}
+
+#team {
+    padding: 60px 0;
+}
+
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#team p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-img {
+    border-radius: 10px;
+    width: 150px;  /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is block-level */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card-body div {
+    margin-top: 10px;
+}
+
+.card-body a {
+    color: #ff4081;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.card-body a:hover {
+    color: #e53570;
+}
+
+
+#gallery {
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#gallery p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.gallery-img {
+    height: 400px; /* Increase the height as needed */
+    object-fit: cover; /* Ensure the images cover the full height and width */
+}
+
+.carousel-item img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+footer h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .list-inline-item a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+footer .list-inline-item a:hover {
+    color: #343a40;
+}
+
+footer form .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #6c757d;
+}
+
+footer form .btn {
+    border-radius: 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+footer form .btn:hover {
+    background-color: #495057;
+}
+
+footer p {
+    color: #6c757d;
+}
+
+footer p a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Specific styles for the About Us page */
+.hero-section.about-us {
+    background-image: url('/images/about-us.webp');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: #ffffff;
+    position: relative;
+}
+
+.hero-section.about-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section.about-us .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section.about-us h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section.about-us p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+#aboutus-header{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#about {
+    padding: 60px 0;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#about p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+#aboutus-cta{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#services-header{
+    background: rgba(0, 0, 0, 0.5);
+}
+#services-cta{
+    background: rgba(0, 0, 0, 0.5);
+}
+#portfolio-item-header{
+    background: rgba(0, 0, 0, 0.5);
+}
+#portfolio-cta{
+    background: rgba(0, 0, 0, 0.5);
+}
+#faq-section{
+    background: rgba(0, 0, 0, 0.5);
+}
