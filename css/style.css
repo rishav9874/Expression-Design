@@ -17,7 +17,7 @@ body {
 }
 
 .hero-section {
-    background-image: url("../images/bacground.jpg");
+    background-image: url("/Expression-Design/images/bacground.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
